@@ -1,0 +1,216 @@
+.section-share {
+    background: #f5f5f5;
+
+    &.section-about {
+        height: 480px !important;
+        background: #edfafb !important;
+    }
+}
+
+
+.section-specialty,
+.section-medical-facilty,
+.section-outstanding-doctor,
+.section-handbook,
+.section-about {
+    height: 330px;
+
+    .section-content {
+        height: 250px;
+        padding-top: 30px;
+        margin: 0 80px;
+
+        .section {
+            padding-bottom: 10px;
+
+            .title-section {
+                font-size: 25px;
+                font-weight: 600;
+                font-family: 'Montserrat', sans-serif !important;
+            }
+
+            .btn-section {
+                float: right;
+                border: none;
+                display: block;
+                outline: none;
+                padding: 8px 15px;
+                color: black;
+                background: #fff;
+                border-radius: 10px;
+
+
+                &:hover {
+                    background: #f7d800;
+                    color: white;
+
+                }
+            }
+        }
+
+
+
+        /* the parent */
+        .slick-list {
+            background: #fff;
+        }
+
+        /* the slides */
+        .slick-slide {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .img-customize {
+            cursor: pointer;
+            padding: 20px 5px 0 5px;
+            height: 250px;
+
+            &.outstanding-doctor {
+                border: 1px solid #dcd6d6;
+                border-radius: 5px;
+            }
+
+            .img-medical {
+                margin-top: 10px;
+                border: 1px solid red;
+                height: 60% !important;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                border-width: 2px !important;
+                border-radius: 5px !important;
+                border-color: rgb(213, 213, 213) !important;
+            }
+
+            .img-doctor {
+                display: flex;
+                justify-content: center;
+
+                .section-outstanding-doctor {
+                    background-image: url('../../assets/doctor/bs1.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+                }
+
+
+
+            }
+
+            .image-section {
+                height: 80% !important;
+                width: 100% !important;
+
+                &.handbook {
+                    height: 70% !important;
+                }
+            }
+
+
+            .title-section {
+                padding-top: 5px;
+                font-size: 17px;
+                font-weight: 500;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif !important;
+
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: normal;
+
+                &.doctor-specialty {
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+
+
+.slick-prev {
+    height: 45px !important;
+    width: 40px !important;
+    z-index: 10;
+    margin-left: 20px !important;
+    background: #49bce2 !important;
+    opacity: 0.7;
+    // border-radius: 45% !important;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.slick-next {
+    height: 45px !important;
+    width: 40px !important;
+    z-index: 10;
+    margin-right: 20px !important;
+    background: #49bce2 !important;
+    opacity: 0.7;
+    // border-radius: 45% !important;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+.section-about-header {
+    text-align: center;
+    font-size: 32px;
+    padding: 10px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.section-about-content {
+    margin: 0 80px;
+    display: flex;
+
+
+
+    .content-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding-left: 40px;
+
+        .child-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70px;
+            width: 250px;
+            border-radius: 10px;
+            background-color: #fff;
+            margin-right: 15px;
+            margin-top: 30px;
+
+            img {
+                width: 110px;
+
+            }
+        }
+    }
+}
+
+.home-footer {
+    text-align: center;
+    padding-top: 6px;
+
+    a {
+        text-decoration: unset;
+        color: #333;
+    }
+}
