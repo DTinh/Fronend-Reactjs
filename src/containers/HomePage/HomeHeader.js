@@ -63,7 +63,7 @@ class HomeHeader extends Component {
                         <div className='title-2'><FormattedMessage id="banner.title2" /></div>
                         <div className='search'>
                             <i className="fas fa-search"></i>
-                            <input type='text' placeholder="Tìm kiếm chuyên khoa"></input>
+                            <input type='text' placeholder="Search for a specialty"></input>
                         </div>
                     </div>
                     <div className='content-down'>
@@ -106,6 +106,7 @@ const mapStateToProps = state => { //map state cua redux vao   , map state cua r
     /**react co the lay cac bien state thong qua this.props */
     return {
         isLoggedIn: state.user.isLoggedIn,
+        userInfo: state.user.userInfo,
         language: state.app.language,
     };
 };
