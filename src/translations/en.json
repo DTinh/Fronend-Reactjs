@@ -49,6 +49,11 @@
         "position": "Position",
         "role": "Role",
         "image": "Avata",
-        "save": "Save"
+        "save": "Save",
+        "edit": "Update"
+    },
+    "homepage": {
+        "outstanding-doctor": "Featured Doctor of the Week",
+        "more-infor": "See more"
     }
 }
