@@ -1,3 +1,4 @@
+* The nodejs version used for this project is 14.17.0
 Project Demo
 - Login interface
   
