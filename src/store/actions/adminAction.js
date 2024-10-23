@@ -1,7 +1,7 @@
 import actionTypes from './actionTypes';
 import {
     getAllCodeService, createNewUserService, getAllUsers,
-    deleteUserService, editUserService, getTopDoctorHomeService
+    deleteUserService, editUserService, getTopDoctorHomeService, getAllDoctors, saveDetailDoctor
 } from '../../services/userService';
 import { toast } from 'react-toastify';
 // export const fetchGenderStart = () => ({
@@ -215,4 +215,50 @@ export const fetchTopDoctor = () => {
         }
     }
 }
-// let res1 = await getTopDoctorHomeService(3);
+export const fetchAllDoctors = () => {
+    return async (dispatch, getState) => {
+        try {
+            let res = await getAllDoctors();
+            if (res && res.errCode === 0) {
+                dispatch({
+                    type: actionTypes.FETCH_ALL_DOCTOR_SUCCESS,
+                    dataDr: res.data
+                })
+            } else {
+                dispatch({ //action 
+                    type: actionTypes.FETCH_ALL_DOCTOR_FAILDED,
+                })
+            }
+        } catch (e) {
+            console.log("FETCH_TOP_DOCTOR_FAILDED: ", e)
+            dispatch({
+                type: actionTypes.FETCH_ALL_DOCTOR_FAILDED,
+            })
+        }
+    }
+}
+
+export const saveDetailInforDoctor = (data) => {
+    return async (dispatch, getState) => {
+        try {
+            let res = await saveDetailDoctor(data);
+            if (res && res.errCode === 0) {
+                toast.success("Save infor detail succeed!")
+                dispatch({
+                    type: actionTypes.FETCH_SAVE_DETAIL_DOCTOR_SUCCESS,
+                })
+            } else {
+                toast.error("Error infor detail succeed!")
+                dispatch({ //action 
+                    type: actionTypes.FETCH_SAVE_DETAIL_DOCTOR_FAILDED,
+                })
+            }
+        } catch (e) {
+            toast.error("Error infor detail succeed!")
+            console.log("FETCH_SAVE_DETAIL_DOCTOR_FAILDED: ", e)
+            dispatch({
+                type: actionTypes.FETCH_SAVE_DETAIL_DOCTOR_FAILDED,
+            })
+        }
+    }
+}
