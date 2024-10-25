@@ -6,6 +6,7 @@ import anh2 from '../../../assets/medical-facility/hinh2.png';
 import * as action from "../../../store/actions";
 import { LANGUAGES } from '../../../utils';
 import { FormattedMessage } from 'react-intl';
+import { withRouter } from 'react-router-dom';
 
 class OutStandingDoctor extends Component {
     constructor(props) {
@@ -24,6 +25,10 @@ class OutStandingDoctor extends Component {
 
     async componentDidMount() {
         this.props.loadTopDoctors();
+    }
+    handleViewDetailDoctor = (doctor) => {
+        console.log("check doctor: ", doctor)
+        this.props.history.push(`/detail-doctor/${doctor.id}`)
     }
     render() {
         let arrDoctors = this.state.arrDoctors;
@@ -48,7 +53,9 @@ class OutStandingDoctor extends Component {
                                 let nameVi = `${item.positionData.valueVi}, ${item.lastName} ${item.firstName}`;
                                 let nameEn = `${item.positionData.valueEn}, ${item.firstName} ${item.lastName}`;
                                 return (
-                                    <div className='img-customize outstanding-doctor'>
+                                    <div className='img-customize outstanding-doctor' key={index}
+                                        onClick={() => this.handleViewDetailDoctor(item)}
+                                    >
                                         <div className='img-doctor'>
                                             <div className='section-outstanding-doctor'
                                                 style={{ backgroundImage: `url(${imageBase64})` }}
@@ -81,4 +88,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor));
