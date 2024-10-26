@@ -61,6 +61,11 @@ class DetailDoctor extends Component {
                                     </span>
                                 }
                             </div>
+                            {detailDoctor && detailDoctor.address &&
+                                <div className='address'><i class="fas fa-map-marker-alt"></i> {detailDoctor.address}
+                                </div>
+                            }
+
                         </div>
                     </div>
                     <div className='schedule-doctor'>
