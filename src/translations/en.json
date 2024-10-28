@@ -64,5 +64,8 @@
         "choose-doctor": "Choose doctor",
         "choose-day": "Choose day",
         "save": "Save"
+    },
+    "detail-doctor": {
+        "appointment": "Appointment"
     }
 }
