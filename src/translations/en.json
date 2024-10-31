@@ -65,7 +65,27 @@
         "choose-day": "Choose day",
         "save": "Save"
     },
-    "detail-doctor": {
-        "appointment": "Appointment"
+    "patient": {
+        "detail-doctor": {
+            "appointment": "Examination Schedule",
+            "no-schedule": "The doctor has no appointments available at this time. Please choose another time!",
+            "choose": "Choose",
+            "book-free": "and book (0 VND booking fee)"
+        }
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "Create additional doctor information",
+            "select-doctor": "Choose a doctor",
+            "introduction": "Introduction",
+            "add": "Create infor",
+            "save": "Save infor",
+            "price": "Medical examination price",
+            "payment": "Payment method",
+            "province": "Province",
+            "nameClinic": "Clinic's name",
+            "addressClinic": "Clinic's address",
+            "note": "Note"
+        }
     }
 }
