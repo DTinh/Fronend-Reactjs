@@ -71,6 +71,13 @@
             "no-schedule": "The doctor has no appointments available at this time. Please choose another time!",
             "choose": "Choose",
             "book-free": "and book (0 VND booking fee)"
+        },
+        "extra-infor-doctor": {
+            "text-address": "Examination address",
+            "price": "Examination price:",
+            "detail": "See details",
+            "method_pay": "The hospital accepts payment in the following forms: ",
+            "hide-detail": "Hide price list"
         }
     },
     "admin": {

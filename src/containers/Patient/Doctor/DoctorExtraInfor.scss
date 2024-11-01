@@ -20,14 +20,19 @@
     }
     .content-down{
         .short-infor{
+            text-transform: uppercase;
+            .currency{
+                width: 90px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                margin-left: 5px;
+            }
             span{
                 margin-left: 5px;
                 cursor: pointer;
                 color: #589cf0; 
             }
-        }
-        .title-price{
-             
         }
         .detail-infor{
             background-color: rgba(248, 248, 248, 1.00);
@@ -36,8 +41,20 @@
 
             .price{
                 padding-bottom: 5px;
+                .left{
+                text-transform: uppercase;
+                }
                 .right{
                     float: right;
+                    .currency{
+                        width: 90px;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        margin-left: 5px;
+                        background-color: rgba(248, 248, 248, 1.00);
+
+                    }
                 }
                 .note{
 
@@ -54,6 +71,7 @@
         .hide-price{
             margin-top: 10px;
             span{
+                text-transform: uppercase;
                 cursor: pointer;
                 color: #589cf0;
             }
