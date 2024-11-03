@@ -26,6 +26,7 @@ class BookingModal extends Component {
 
     }
 
+
     render() {
         let { isOpenModal, closeBookingClose, dataTime } = this.props;
         let doctorId = '';
@@ -33,7 +34,6 @@ class BookingModal extends Component {
             doctorId = dataTime.doctorId
         }
         // let doctorId = dataTime && !_isEmply(dataTime) ? dataTime.doctorId : '';
-        console.log("check props", dataTime);
 
         return (
             <Modal
@@ -56,6 +56,8 @@ class BookingModal extends Component {
                         <div className='doctor-infor'>
                             <ProfileDoctor
                                 doctorId={doctorId}
+                                isShowDescriptionDoctor={false}
+                                dataTime={dataTime}
                             />
                         </div>
 
