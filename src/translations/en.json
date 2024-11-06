@@ -78,6 +78,19 @@
             "detail": "See details",
             "method_pay": "The hospital accepts payment in the following forms: ",
             "hide-detail": "Hide price list"
+        },
+        "booking-modal": {
+            "title": "Appointment information",
+            "fullName": "Full Name",
+            "phoneNumber": "Phone Number",
+            "email": "Email",
+            "address": "Address ",
+            "reason": "Reason for examination",
+            "birtday": "Date of birth",
+            "gender": "Gender",
+            "confirm": "Confirm",
+            "cancel": "Cancel",
+            "book": "Book a free appointment"
         }
     },
     "admin": {

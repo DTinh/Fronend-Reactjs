@@ -54,7 +54,7 @@ class ProfileDoctor extends Component {
             return (
                 <>
                     <div>{time} | {date}</div>
-                    <div>Dặ lịch miễn phí</div>
+                    <div><FormattedMessage id="patient.booking-modal.book" /></div>
                 </>
             )
         }
@@ -70,8 +70,6 @@ class ProfileDoctor extends Component {
             nameVi = `${dataProfile.positionData.valueVi}, ${dataProfile.lastName} ${dataProfile.firstName}`;
             nameEn = `${dataProfile.positionData.valueEn}, ${dataProfile.firstName} ${dataProfile.lastName}`;
         }
-        console.log("check props", this.props);
-
         return (
             <div className='profile-doctor-container'>
                 <div className='intro-doctor'>
@@ -105,7 +103,7 @@ class ProfileDoctor extends Component {
 
                     </div>
                 </div>
-                <div className='price'>Giá khám:
+                <div className='price'><FormattedMessage id="patient.extra-infor-doctor.price" />
                     {dataProfile && dataProfile.Doctor_Infor && language === LANGUAGES.VI &&
                         <NumberFormat
                             disabled
