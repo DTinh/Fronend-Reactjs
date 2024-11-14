@@ -59,8 +59,8 @@ class ManageClinic extends Component {
                 name: '',
                 address: '',
                 imageBase64: '',
-                // descriptionHTML: '',
-                // descriptionMarkdown: '',
+                descriptionHTML: '',
+                descriptionMarkdown: '',
             })
             toast.success("Create a new clinic succeed!")
         } else {

@@ -117,8 +117,16 @@
             }
 
             .image-section {
-                height: 80% !important;
+                height: 60% !important;
                 width: 100% !important;
+             
+                &.image-clinic{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 80%;
+                    height: 10px;
+                }
                 .specialty{
                     width: 200px !important;
                     height: 200px !important;
