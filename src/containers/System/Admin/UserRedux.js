@@ -232,7 +232,7 @@ class UserRedux extends Component {
                             <div className='col-12 my-3'><FormattedMessage id="manage-user.add" /> </div>
                             <div className='col-12 '>{isGetGenders === true ? "Loading genders" : ""}</div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.email" /> </lable>
+                                <label><FormattedMessage id="manage-user.email" /> </label>
                                 <input className='form-control' type="email"
                                     value={email}
                                     onChange={(event) => { this.onChangeInput(event, 'email') }}
@@ -240,7 +240,7 @@ class UserRedux extends Component {
                                 />
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.password" /> </lable>
+                                <label><FormattedMessage id="manage-user.password" /> </label>
                                 <input className='form-control' type="password"
                                     value={password}
                                     onChange={(event) => { this.onChangeInput(event, 'password') }}
@@ -248,35 +248,35 @@ class UserRedux extends Component {
                                 />
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.firstName" /></lable>
+                                <label><FormattedMessage id="manage-user.firstName" /></label>
                                 <input className='form-control' type="text"
                                     value={firstName}
                                     onChange={(event) => { this.onChangeInput(event, 'firstName') }}
                                 />
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.lastName" /> </lable>
+                                <label><FormattedMessage id="manage-user.lastName" /> </label>
                                 <input className='form-control' type="text"
                                     value={lastName}
                                     onChange={(event) => { this.onChangeInput(event, 'lastName') }}
                                 />
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.phone" /> </lable>
+                                <label><FormattedMessage id="manage-user.phone" /> </label>
                                 <input className='form-control' type="text"
                                     value={phoneNumber}
                                     onChange={(event) => { this.onChangeInput(event, 'phoneNumber') }}
                                 />
                             </div>
                             <div className='col-9'>
-                                <lable><FormattedMessage id="manage-user.address" /> </lable>
+                                <label><FormattedMessage id="manage-user.address" /> </label>
                                 <input className='form-control' type="text"
                                     value={address}
                                     onChange={(event) => { this.onChangeInput(event, 'address') }}
                                 />
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.gender" /> </lable>
+                                <label><FormattedMessage id="manage-user.gender" /> </label>
                                 <select className="form-control"
                                     onChange={(event) => { this.onChangeInput(event, 'gender') }}
                                     value={gender}
@@ -292,7 +292,7 @@ class UserRedux extends Component {
                                 </select>
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.position" /> </lable>
+                                <label><FormattedMessage id="manage-user.position" /> </label>
                                 <select className="form-control"
                                     onChange={(event) => { this.onChangeInput(event, 'position') }}
                                     value={position}
@@ -308,7 +308,7 @@ class UserRedux extends Component {
                                 </select>
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.role" /> </lable>
+                                <label><FormattedMessage id="manage-user.role" /> </label>
                                 <select className="form-control"
                                     onChange={(event) => { this.onChangeInput(event, 'role') }}
                                     value={role}
@@ -324,7 +324,7 @@ class UserRedux extends Component {
                                 </select>
                             </div>
                             <div className='col-3'>
-                                <lable><FormattedMessage id="manage-user.image" /> </lable>
+                                <label><FormattedMessage id="manage-user.image" /> </label>
                                 <div className='preview-img-container'>
                                     <input id='previewImg' type='file' hidden
                                         onChange={(event) => this.handleOnchangeImage(event)}

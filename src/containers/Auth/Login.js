@@ -80,14 +80,14 @@ class Login extends Component {
                     <div className='login-content'>
                         <div className='col-12 text-login'>Login</div>
                         <div className='col-12 form-group login-input'>
-                            <lable>Username:</lable>
+                            <label>Username:</label>
                             <input type='text' className='form-control'
                                 placeholder='Enter Your Username'
                                 value={this.state.username}
                                 onChange={(event) => this.handleOnChangeUsername(event)}></input>
                         </div>
                         <div className='col-12 form-group login-input'>
-                            <lable>Password:</lable>
+                            <label>Password:</label>
                             <div className='custom-input-password'>
                                 <input type={this.state.isShowPassword ? 'text' : 'password'}
                                     className='form-control'
